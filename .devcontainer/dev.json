@@ -1,0 +1,16 @@
+{
+  "name": "design-grabr",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "postCreateCommand": "playwright install && playwright install-deps",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  }
+}
